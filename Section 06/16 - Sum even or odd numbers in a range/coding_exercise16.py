@@ -38,7 +38,7 @@ def sum_eo(n, t):
 def sum_eo( n: int, t: str) -> int:
   sum = 0
   if t == 'e':
-    for item in range(0,n-1,2):
+    for item in range(0,n,2):
       sum += item
   elif t == 'o':
     for item in range(1,n,2):
