@@ -35,6 +35,23 @@ def sum_eo(n, t):
 
     return sum(range(start, n, 2))
 
+def sum_eo( n: int, t: str) -> int:
+  sum = 0
+  if t == 'e':
+    for item in range(0,n-1,2):
+      sum += item
+  elif t == 'o':
+    for item in range(1,n,2):
+      sum += item
+  else:
+    return -1
+  return sum
+
+print(sum_eo(10, 'e'))
+print(sum_eo(7, 'o'))
+print(sum_eo(11, 'spam'))
+   
+
 
 print(sum_eo(10, 'e'))
 print(sum_eo(7, 'o'))
